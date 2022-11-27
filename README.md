@@ -1,4 +1,10 @@
 # Ai-image-colorization
+[![Maintenance](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) 
+[![Maintenance](https://img.shields.io/badge/framework-flask-red.svg)](https://flask.palletsprojects.com/en/2.0.x/) 
+[![Maintenance](https://img.shields.io/badge/Frontend-HTML/CSS-green.svg)](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green.svg) 
+[![Maintenance](https://img.shields.io/badge/Backend-Javascript/JQuery-yellow.svg)](https://img.shields.io/badge/Backend-Javascript-yellow.svg) 
+[![Maintenance](https://img.shields.io/badge/AI-Deep_learning-blue.svg)](https://img.shields.io/badge/Backend-JD-yellow.svg) 
+
 Black & white image colorization using Deep Learning using (Pretrained Model)
 
 > Check out Live Demo: https://tech-ai-image-colorization.onrender.com/
