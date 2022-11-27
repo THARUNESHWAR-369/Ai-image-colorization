@@ -1,0 +1,32 @@
+
+:root {
+    --light-black: #0000001c;
+    --hr-height: 0.1rem;
+}
+
+b {
+    font-weight: bolder;
+    color: #000;
+}
+
+hr {
+    background: var(--light-black);
+    height: var(--hr-height);
+    border: none;
+    width: 75%;
+    margin: auto;
+}
+
+.add-hr {
+    padding: 5rem;
+}
+
+.underline {
+    background: var(--light-black);
+    height: var(--hr-height);
+    margin: auto;
+}
+
+.add-blur {
+    filter: blur(0.7rem);
+}
