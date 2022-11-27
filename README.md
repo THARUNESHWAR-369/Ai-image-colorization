@@ -10,6 +10,17 @@ Black & white image colorization using Deep Learning using (Pretrained Model)
 > Check out Live Demo: https://tech-ai-image-colorization.onrender.com/
 
 
+# sample images
+## Example Images
+
+<img src=https://github.com/THARUNESHWAR-369/Ai-image-colorization/blob/main/static/images/lion.jpg width=250><img src=https://github.com/THARUNESHWAR-369/Ai-image-colorization/blob/main/static/images/lion_colored.jpg width=250>
+
+<img src=https://github.com/THARUNESHWAR-369/Ai-image-colorization/blob/main/static/images/tower.webp width=250><img src=https://github.com/THARUNESHWAR-369/Ai-image-colorization/blob/main/static/images/tower_colored.webp width=250>
+
+
+<img src=https://github.com/THARUNESHWAR-369/Ai-image-colorization/blob/main/static/images/dog.webp width=250><img src=https://github.com/THARUNESHWAR-369/Ai-image-colorization/blob/main/static/images/dog_colored.webp width=250>
+
+
 # How to run the App
 > 1. ```$ git clone https://github.com/THARUNESHWAR-369/Ai-image-colorization.git```
 > 2. ```$ cd Ai-image-colorization```
