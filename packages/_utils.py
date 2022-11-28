@@ -1,3 +1,4 @@
+
 from datetime import datetime
 
 from ._cvtColor import COLORIZE
@@ -28,5 +29,3 @@ class UTILS(IMG_CONVERTER):
         return [bwImageData.filename, 
                 bwImageData.filename.split('.')[-2], 
                 bwImageData.filename.split('.')[-1]]
-        
-    

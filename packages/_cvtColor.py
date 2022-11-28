@@ -1,3 +1,4 @@
+
 import numpy as np
 import cv2
 import os
@@ -55,4 +56,3 @@ class COLORIZE(IMG_CONVERTER):
         except Exception as e:
             print("c2.imread:(Excpet) ", e)
             return False, None
-        
