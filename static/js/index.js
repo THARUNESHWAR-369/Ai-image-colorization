@@ -124,8 +124,48 @@ $("#colorit-button").click(function(e){
 });
 
 
-
-
+function setColorScheme(scheme) {
+    switch(scheme){
+      case 'dark':
+        console.log('dark');
+        document.getElementById('body').id = 'dark';
+        break;
+      case 'light':
+        console.log('light');
+        try{document.getElementById('dark').id = 'light';}
+        catch(e){document.getElementById('body').id = 'light';}
+        // Light
+        break;
+      default:
+        // Default
+        try{document.getElementById('dark').id = 'light';}
+        catch(e){document.getElementById('body').id = 'light';}
+        console.log('default');
+        break;
+    }
+  }
+  
+  function getPreferredColorScheme() {
+    if (window.matchMedia) {
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+        return 'dark';
+      } else {
+        return 'light';
+      }
+    }
+    return 'light';
+  }
+  
+  function updateColorScheme(){
+      setColorScheme(getPreferredColorScheme());
+  }
+  
+  if(window.matchMedia){
+    var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    colorSchemeQuery.addEventListener('change', updateColorScheme);
+  }
+  
+  updateColorScheme();
 
 
 

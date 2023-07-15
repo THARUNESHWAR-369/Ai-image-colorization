@@ -4,6 +4,18 @@
     --hr-height: 0.1rem;
 }
 
+#light .container, #light .heading, #light .heading span, #light .heading h4, #dark .container, #dark .heading, #dark .heading span, #dark .heading h4, #light .model-popup, #dark .model-popup {
+    color: white;
+}
+
+.heading span  p b {
+    background: linear-gradient(to right,red, orange, yellow, rgb(0, 255, 0), blue, indigo, violet);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} 
+
+
+
 b {
     font-weight: bolder;
     color: #000;

@@ -1,82 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
 
 :root {
-    --theme-color: rgb(223, 70, 70);
-    --text-light-shadow: 0px 15px 25px rgb(0 0 0 / 20%);
-    --box-shadow: 0px 15px 25px rgb(0 0 0 / 20%);
-    --border-radius: 0.3rem;
+  --theme-color: rgb(223, 70, 70);
+  --box-shadow: 0px 15px 25px rgb(0 0 0 / 20%);
+  --border-radius: 0.3rem;
 
-
-    --black-transparent-bg: #00000045;
-    --text-color: #333333;
-    --text-light-shadow: 5px 5px 10px rgb(255 255 255 / 20%);
-
-    --text-shadow-dark: 5px 5px 10px
-    rgb(0 0 0 / 37%)
+  --black-transparent-bg: #00000045;
+  --text-color: #333333;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Aclonica', sans-serif;
-    /*font-family: monospace, sans-serif;*/
-    /*letter-spacing: 0.5rem;*/
-    color: var(--text-color);
-    text-shadow: var(--text-light-shadow);
+  font-family: "poppins", cursive;
+
+  /*letter-spacing: 0.5rem;*/
+  color: var(--text-color);
+  text-shadow: var(--text-light-shadow);
 }
 
 .bg {
-    background: url('../images/bg2.jpg') no-repeat 
-    center/cover;
-    height: -webkit-fill-available;
-    background-position: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    width: auto;
-    opacity: 0.75;
-    filter: blur(1px);
+  background-image: linear-gradient(180deg, #00000073, #000000), var(--bg-image),
+    var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -15;
 }
 
 .container {
-    /*background: #ff000047;*/
-    width: 100%;
-    height: 100vh;
+  /*background: #ff000047;*/
+  width: 100%;
+  height: 100vh;
 }
-
 
 /*=========================== HEADING =======================*/
 
 .heading {
-    /*background: #ffa50054;*/
-    width: -webkit-fill-available;
-    /* height: auto; */
-    /* width: 100%; */
-    text-align: center;
-    padding-top: 8rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-shadow: var(--text-light-shadow);
-    letter-spacing: 0.5rem;
+  /*background: #ffa50054;*/
+  width: -webkit-fill-available;
+  /* height: auto; */
+  /* width: 100%; */
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-shadow: var(--text-light-shadow);
+  letter-spacing: 0.5rem;
+  font-family: "Lumanosimo", cursive;
 }
 
 .heading h4 {
-    padding: 3rem;
-    font-size: 3.5rem;
-    letter-spacing: 0.5rem;
-    color: var(--text-color);
+  padding: 3rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  color: var(--text-color);
 }
 
 .heading span {
-    font-size: 1.25rem;
-    letter-spacing: 0.3rem;
-    color: var(--text-color);
+  font-size: 1.25rem;
+  letter-spacing: 0.3rem;
+  color: var(--text-color);
 }
 /*
 .color-span {
@@ -85,289 +77,301 @@ body {
 }*/
 
 .underline-text#color {
-    width: 6rem;
-    height: 0.15rem;
-    position: relative;
-    left: 13.5rem;
-    top: 0.3rem;
+  width: 6rem;
+  height: 0.15rem;
+  position: relative;
+  left: 13.5rem;
+  top: 0.3rem;
 }
 
 .underline-text#bw {
-    width: 6rem;
-    height: 0.15rem;
-    position: relative;
-    left: 13.5rem;
-    top: 0.3rem;
+  width: 6rem;
+  height: 0.15rem;
+  position: relative;
+  left: 13.5rem;
+  top: 0.3rem;
 }
 
-
 /*=========================== END OF HEADING =======================*/
-
 
 /*=========================== GET START BUTTON =====================*/
 
 .get-start-btn {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin-top: 1.5rem;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .get-start-btn button {
-    border: none;
-    padding: 1rem 2.5rem;
-    font-size: large;
-    font-family: Aclonica;
-    color: white;
-    background: var(--black-transparent-bg);
-    border-radius: 0.5rem;
-    letter-spacing: 0.3rem;
-    cursor: pointer;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: large;
+  color: white;
+  background: var(--black-transparent-bg);
+  border-radius: 0.5rem;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    rgb(0, 255, 0),
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 800%;
+  animation: get-start-btn 1s ease linear;
+  transition: background-position 0.5s ease;
 }
 
 .get-start-btn button:hover {
-    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 60%);
+  background-position: 100%;
+}
+
+@keyframes get-start-btn {
+}
+
+.get-start-btn button:hover {
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 60%);
 }
 
 /*=========================== END OF GET START BUTTON =====================*/
 
-
-
 /*=========================== WHAT WE DO =====================*/
 
-
 .what-we-do {
-    width: 100%;
-    height: 100%;
-    letter-spacing: 0.6rem;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.3rem;
 }
 
 .what-we-do-header {
-    width: 100%;
-    text-align: center;
-    text-shadow: var(--text-light-shadow);
+  width: 100%;
+  text-align: center;
+  text-shadow: var(--text-light-shadow);
 }
 
 .what-we-do-header .underline#what-we-do {
-    margin-top: 0.7rem;
-    width: 21.5rem;
-    height: 0.16rem;
+  margin-top: 0.7rem;
+  width: 21.5rem;
+  height: 0.16rem;
 }
 
 .what-we-do-content {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .what-we-do-card-row {
-    padding: 1rem;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    /*align-items: center;*/
-    text-align: center;
-    justify-content: center;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /*align-items: center;*/
+  text-align: center;
+  justify-content: center;
 }
 
 .what-we-do-content .card {
-    width: 30rem;
-    background: var(--black-transparent-bg);
-    text-align: center;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    color: white;
-    box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 38%);
-    text-shadow: var(--text-shadow-dark);
-    line-height: 1.3rem;
+  width: 30rem;
+  background: var(--black-transparent-bg);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+  box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 38%);
+  text-shadow: var(--text-shadow-dark);
+  line-height: 1.3rem;
 }
 
 .what-we-do-content .hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
 }
 
 .what-we-do-content .header-icon {
-    font-size: -webkit-xxx-large;
-    padding: 0.7rem;
+  font-size: -webkit-xxx-large;
+  padding: 0.7rem;
 }
 
 .what-we-do-content .card:hover {
-    transform: scale(1.066);
-    transition: 0.5s all;
+  transform: scale(1.066);
+  transition: 0.5s all;
 }
 
 /*=========================== END OF WHAT WE DO =====================*/
 
-
-
 /*=========================== FOOTER =====================*/
 
 .footer {
-    width: 100%;
-    color: white;
-    text-align: center;
-    letter-spacing: 0.31rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.31rem;
 }
 
 .footer-body {
-    padding: 2rem;
-    font-size: larger;
+  padding: 1.15rem;
+  font-size: small;
 }
 
 .footer-body i {
-    color: #000;
-    font-size: x-large;
+  color: white;
+  font-size: x-large;
+}
+
+.footer-body p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /*=========================== END OF FOOTER =====================*/
 
-
-
 /*=========================== MODEL =====================*/
 
 .model-popup {
-    background: #00000047;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 11111111111111;
-    display: none;
-    transition: 0.5s all;
-    overflow: auto;
+  background: #00000047;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 11111111111111;
+  display: none;
+  transition: 0.5s all;
+  overflow: auto;
 }
 
 .model-popup-container {
-    background: #00000029;
-    width: 80%;
-    margin: auto;
-    max-width: 50rem;
-    margin-top: 10rem;
-    border-radius: 0.4rem;
-    text-shadow: 5px 5px 10px
-    rgb(255 255 255 / 8%);
+  background: #00000029;
+  width: 80%;
+  margin: auto;
+  max-width: 50rem;
+  margin-top: 10rem;
+  border-radius: 0.4rem;
+  text-shadow: 5px 5px 10px rgb(255 255 255 / 8%);
 }
 
 .model-popup-container .add-hr {
-    padding: 0.3rem;
+  padding: 0.3rem;
 }
 
 .model-popup-container .add-hr .hr {
-    width: 95%;
-    background-color: #00000047;
+  width: 95%;
+  background-color: #00000047;
 }
 
 .model-popup-header {
-    display: flex;
-    /* padding: 1rem; */
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    /* padding-top: 1rem; */
-    margin: 1rem 2rem 0rem 0rem;
-    padding: 1rem;
-    font-size: x-large;
+  display: flex;
+  /* padding: 1rem; */
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* padding-top: 1rem; */
+  margin: 1rem 2rem 0rem 0rem;
+  padding: 1rem;
+  font-size: x-large;
 }
 
 .model-popup-header span {
-    cursor: pointer;
-    color: crimson;
+  cursor: pointer;
+  color: crimson;
 }
 
 .model-popup-content {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 .model-popup-content-container {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .upload-image-btn {
-    border: none;
-    /* background: #00ff0042; */
-    padding: 1rem 3rem;
-    /* border-radius: 0.3rem; */
-    font-size: larger;
-    /* color: white; */
-    font-family: "Aclonica";
-    letter-spacing: 0.15rem;
-    /* cursor: pointer; */
-    display: inline-block;
-    cursor: pointer;
-    background: rgb(48 180 114);
-    border-radius: var(--border-radius);
-    color: white;
+  border: none;
+  /* background: #00ff0042; */
+  padding: 1rem 3rem;
+  /* border-radius: 0.3rem; */
+  font-size: larger;
+  /* color: white; */
+  letter-spacing: 0.15rem;
+  /* cursor: pointer; */
+  display: inline-block;
+  cursor: pointer;
+  background: rgb(48 180 114);
+  border-radius: var(--border-radius);
+  color: white;
 }
 
 .upload-image-btn input {
-    display: hidden;
+  display: hidden;
 }
 
-
-
 .upload-image-btn i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .upload-image-btn p {
-    color: #fff;
-    letter-spacing: 3px;
+  color: #fff;
+  letter-spacing: 3px;
 }
 
-.modal-display-image, .modal-display-image-colored{
-    padding: 1rem;
-    display: none;
+.modal-display-image,
+.modal-display-image-colored {
+  padding: 1rem;
+  display: none;
 }
 
-.model-resp-img, .model-resp-img-colored {
-    width: 100%;
-    height: 100%;
+.model-resp-img,
+.model-resp-img-colored {
+  width: 100%;
+  height: 100%;
 }
 
 .colorit-btn {
-    display: none;
+  display: none;
 }
 
 .colorit-btn .coloritBtn {
-    border: none;
-    padding: 1rem 3rem;
-    border-radius: 0.3rem;
-    font-family: 'Aclonica', sans-serif;
-    letter-spacing: 0.2rem;
-    background: crimson;
-    color: white;
-    font-weight: bolder;
-    cursor: pointer;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 0.3rem;
+  letter-spacing: 0.2rem;
+  background: crimson;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 .download-btn {
-    display: none;
-    margin-top: 1.5rem;
+  display: none;
+  margin-top: 1.5rem;
 }
 
 .download-btn button {
-    border: none;
-    padding: 1rem 3rem;
-    border-radius: 0.4rem;
-    font-family: "Aclonica";
-    letter-spacing: 0.15rem;
-    font-weight: bolder;
-    cursor: pointer;
-    color: var(--color);
-    background: var(--bg);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 0.4rem;
+  letter-spacing: 0.15rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: var(--color);
+  background: var(--bg);
 }
 
 .download-btn button a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 /*=========================== END OF MODEL =====================*/
 
 @media screen and (max-width: 400px) {
-    .heading h4 {
-        padding: 1rem;
-    }
+  .heading h4 {
+    padding: 1rem;
+  }
 }

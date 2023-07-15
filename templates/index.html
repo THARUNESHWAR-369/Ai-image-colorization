@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +17,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body id="body">
 
 
     <!---------------- LOADER -------------------->
@@ -50,29 +54,31 @@
             <div class="model-popup-content">
                 <div class="model-popup-content-container" id="model-popup-content-container">
                     <!--<form id="upload-file">-->
-                        <div class="upload-image-btn" id="upload-image-btn">
-                            <i class="fa fa-upload paddingAllSides15px" aria-hidden="true"></i>
-                            <p>Upload Black & White Image</p>
-                            <input type="file" accept="image/*" name="color-img" id="color-img" hidden onchange="loadFile(event)" required>
-                        </div>
-    
-    
-                        <div class="modal-display-image" id="modal-display-image">
-                            <img class="model-resp-img" id="model-resp-img">
-                        </div>
+                    <div class="upload-image-btn" id="upload-image-btn">
+                        <i class="fa fa-upload paddingAllSides15px" aria-hidden="true"></i>
+                        <p>Upload Black & White Image</p>
+                        <input type="file" accept="image/*" name="color-img" id="color-img" hidden
+                            onchange="loadFile(event)" required>
+                    </div>
 
-                        <div class="modal-display-image-colored" id="modal-display-image-colored">
-                            <img class="model-resp-img-colored" id="model-resp-img-colored">
-                        </div>
-                        
-                        <div class="colorit-btn" id="colorit-btn">
-                            <input type="submit" id="colorit-button" value="ColorIT" class="coloritBtn">
-                        </div>
 
-                        <div class="download-btn" id="download-btn">
-                            <button class="btn" id="download-img" style="--color: white; --bg: #00baffbd;">Download</button>
-                            <button class="btn" style="--color: black; --bg: #ffff00;" onclick="window.location.href='/'">Color new</button>
-                        </div>
+                    <div class="modal-display-image" id="modal-display-image">
+                        <img class="model-resp-img" id="model-resp-img">
+                    </div>
+
+                    <div class="modal-display-image-colored" id="modal-display-image-colored">
+                        <img class="model-resp-img-colored" id="model-resp-img-colored">
+                    </div>
+
+                    <div class="colorit-btn" id="colorit-btn">
+                        <input type="submit" id="colorit-button" value="ColorIT" class="coloritBtn">
+                    </div>
+
+                    <div class="download-btn" id="download-btn">
+                        <button class="btn" id="download-img" style="--color: white; --bg: #00baffbd;">Download</button>
+                        <button class="btn" style="--color: black; --bg: #ffff00;"
+                            onclick="window.location.href='/'">Color new</button>
+                    </div>
                     <!--</form>-->
 
                 </div>
@@ -82,36 +88,36 @@
 
     <!--- END OF MODEL POPUP ----->
 
-   <div class="bg" id="bg"></div>
+    <div class="bg" id="bg" style="--bg-image: url('../images/bg.jpg');"></div>
 
-   <div class="container" id="container">
+
+    <div class="container" id="container">
         <div class="heading">
             <h4>COLOR IT</h4>
             <span>
                 <p>
-                    <b>Color</b> 
-                    your 
+                    <b>Color</b>
+                    your
                     <b>Black & white </b>
                     image
                 </p>
-                <!--<div class="underline-text" id="color"></div>
-                <div class="underline-text" id="bw"></div>-->
+
             </span>
-            
+
         </div>
 
         <div class="get-start-btn">
             <button id="get-start">Get start</button>
-       </div>
+        </div>
 
-       <div class="add-hr">
+        <div class="add-hr">
             <hr class="hr" />
-       </div>
+        </div>
 
-       <div class="what-we-do">
+        <div class="what-we-do">
             <div class="what-we-do-container">
                 <div class="what-we-do-header">
-                    <p>  --- What we do ---  </p>
+                    <p> --- What we do --- </p>
                     <div class="underline" id="what-we-do"></div>
                 </div>
                 <div class="what-we-do-content">
@@ -127,17 +133,17 @@
                             </div>
                             <div class="card-body">
                                 <hr class="hr">
-                                <p>Free tool to convert your black and white 
-                                    photo to Color image. upload your 
-                                    color photo in this tool, preview it, 
-                                    then click Convert to black and white 
-                                    button. Once process done, tool will 
-                                    preview your black and white image 
+                                <p>Free tool to convert your black and white
+                                    photo to Color image. upload your
+                                    color photo in this tool, preview it,
+                                    then click Convert to black and white
+                                    button. Once process done, tool will
+                                    preview your black and white image
                                     along with download button.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-icon">
@@ -150,17 +156,18 @@
                             <div class="card-body">
                                 <hr class="hr">
                                 <p>
-                                    Black-and-white images are not usually 
-                                    starkly contrasted black and white. 
-                                    They combine black and white in a 
-                                    continuum producing a range of shades 
-                                    of gray. Our tool also using shades of 
-                                    gray to make black and white image. 
-                                    Please read further about B&W image <a href="https://en.wikipedia.org/wiki/Black_and_white" target="_blank">here</a>.
+                                    Black-and-white images are not usually
+                                    starkly contrasted black and white.
+                                    They combine black and white in a
+                                    continuum producing a range of shades
+                                    of gray. Our tool also using shades of
+                                    gray to make black and white image.
+                                    Please read further about B&W image <a
+                                        href="https://en.wikipedia.org/wiki/Black_and_white" target="_blank">here</a>.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-icon">
@@ -172,17 +179,17 @@
                             </div>
                             <div class="card-body">
                                 <hr class="hr">
-                                <p>We are using client side scripts 
-                                    to process the image, so your 
-                                    images are not moved anywhere 
-                                    away from your computer. All 
-                                    the process are carried out in web 
-                                    browser, so no one can access your 
+                                <p>We are using client side scripts
+                                    to process the image, so your
+                                    images are not moved anywhere
+                                    away from your computer. All
+                                    the process are carried out in web
+                                    browser, so no one can access your
                                     images, except you.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-icon">
@@ -194,11 +201,11 @@
                             </div>
                             <div class="card-body">
                                 <hr class="hr">
-                                <p>Yes, its easy to download your black and 
-                                    white image in a click. Once image is 
-                                    converted to Color, the download button 
-                                    should be enabled. Just click the download 
-                                    button to save converted color image to your 
+                                <p>Yes, its easy to download your black and
+                                    white image in a click. Once image is
+                                    converted to Color, the download button
+                                    should be enabled. Just click the download
+                                    button to save converted color image to your
                                     device.
                                 </p>
                             </div>
@@ -207,18 +214,21 @@
                 </div>
 
                 <hr class="hr" />
-        
-               <div class="footer">
+
+                <div class="footer">
                     <div class="footer-body">
-                        <p>Done By THARUNESHWAR | <a href="https://github.com/THARUNESHWAR-369/image-colorize" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+                        <p>&copy 2023. All Rights Reserved by Tharuneshwar | <a href="https://github.com/THARUNESHWAR-369/image-colorize"
+                                target="_blank"><i class="fa-brands fa-github"></i></a></p>
                     </div>
-               </div>
+                </div>
             </div>
-       </div>
+        </div>
 
-   </div>
+    </div>
 
-   <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 
 </body>
+
 </html>
