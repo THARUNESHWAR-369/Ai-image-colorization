@@ -7,7 +7,7 @@
 
 Black & white image colorization using Deep Learning using (Pretrained Model)
 
-> Check out Live Demo: [https://tech-ai-image-colorization.onrender.com/](https://bw-image-color.onrender.com)
+> Check out Live Demo: https://bw-image-color.onrender.com
 
 
 # sample images
