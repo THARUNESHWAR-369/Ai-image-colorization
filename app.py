@@ -41,8 +41,7 @@ def index():
         __colored_successfully, __colored_buff_img = utils.startColor(bw_img_buf)
         
         print("__colored_successfully: ", __colored_successfully)
-        
-                
+    
         if __colored_successfully:
 
                 return {
@@ -58,4 +57,4 @@ def index():
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
