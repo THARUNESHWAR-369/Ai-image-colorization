@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
   --theme-color: rgb(223, 70, 70);
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "poppins", cursive;
+  font-family: "poppins", sans-serif;
 
   /*letter-spacing: 0.5rem;*/
   color: var(--text-color);
@@ -184,6 +184,7 @@ body {
   box-shadow: 1px 1px 20px 0px rgb(0 0 0 / 38%);
   text-shadow: var(--text-shadow-dark);
   line-height: 1.3rem;
+  letter-spacing: 1.5px;
 }
 
 .what-we-do-content .hr {
@@ -210,7 +211,7 @@ body {
   width: 100%;
   color: white;
   text-align: center;
-  letter-spacing: 0.31rem;
+  /* letter-spacing: 0.31rem; */
 }
 
 .footer-body {
@@ -227,6 +228,8 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    align-items: center;
+    gap: 1em;
 }
 
 /*=========================== END OF FOOTER =====================*/
